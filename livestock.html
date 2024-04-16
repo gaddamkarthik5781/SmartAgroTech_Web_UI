@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestock_Monitoring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="footer.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Smart AgroTech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="home.html"><img src="home.gif" alt="" width="17"
+                                    height="14">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><img src="about.gif" alt="" width="17"
+                                    height="14">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><img src="contact.gif" alt="" width="17"
+                                    height="14">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html"><img src="gallery.gif" alt="" width="17"
+                                    height="14">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html"><img src="team.gif" alt="" width="16"
+                                    height="14">Team</a>
+                        </li>
+                        <div class="dropdown" data-bs-theme="dark">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    More <img src="more.gif" alt="" width="16" height="15">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkButtonDark">
+                                    <li><a class="dropdown-item" href="precision.html">Precision-Farm</a></li>
+                                    <li><a class="dropdown-item" href="Automated.html">Automated-Machinery</a></li>
+                                    <li><a class="dropdown-item" href="Vertical.html">Vertical-Farming</a></li>
+                                    <li><a class="dropdown-item" href="crop_management.html">Crop-Management</a></li>
+                                    <li><a class="dropdown-item active" href="livestock.html">LiveStock-Monitoring</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Smart AgroTech</a>
+                    <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="home.html"><img src="home.gif" alt=""
+                                        width="17" height="14"> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"><img src="about.gif" alt="" width="17"
+                                        height="14">
+                                    About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html"><img src="gallery.gif" alt="" width="17"
+                                        height="14"> Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"><img src="contact.gif" alt="" width="17"
+                                        height="14"> Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="team.html"><img src="team.gif" alt="" width="16" height="14">
+                                    Team</a>
+                            </li>
+                            <div class="dropdown" data-bs-theme="dark">
+                                <a class="nav-link dropdown-toggle active" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    More<img src="more.gif" alt="" width="16" height="15">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
+                                    <li><a class="dropdown-item" href="precision.html">Precision-Farm</a></li>
+                                    <li><a class="dropdown-item" href="Automated.html">Automated-Machinery</a></li>
+                                    <li><a class="dropdown-item" href="Vertical.html">Vertical-Farming</a></li>
+                                    <li><a class="dropdown-item" href="crop_management.html">Crop-Management</a></li>
+                                    <li><a class="dropdown-item active" href="livestock.html">LiveStock-Monitoring</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav> -->
+
+        <br><br>
+
+        <div class="d-flex justify-content-center my-4">
+            <div class="card mx-auto" style="width: 48rem;">
+                <img src="live.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Livestock Monitoring</h5>
+                    <p class="card-text">"Livestock monitoring is an important aspect of smart agriculture technology
+                        that
+                        helps farmers to manage their livestock more efficiently, improve animal welfare, and increase
+                        their
+                        profitability. Livestock monitoring involves the use of sensors, IoT devices, and data analytics
+                        to
+                        track various parameters related to the health and behavior of livestock.There are different
+                        types
+                        of livestock monitoring in smart agriculture technology, including:</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong>Health Monitoring</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Health monitoring is the process of using sensors and other technologies to continuously
+                            monitor the health of animals in a livestock herd. Health monitoring involves collecting
+                            data on various vital signs, such as body temperature, heart rate, respiration rate, and
+                            activity level. This data is then analyzed to detect any changes that may indicate an
+                            illness or other health issue, allowing farmers to take timely action to prevent or treat
+                            the issue.<br><br>There are several types of sensors that can be used for health monitoring
+                            in
+                            livestock:<br><br>
+                            <div class="row row-cols-1 row-cols-md-3 g-5">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="tshm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Temperature sensors:</h5>
+                                            <p class="card-text">These sensors can be used to measure the body
+                                                temperature
+                                                of animals. An increase in body temperature may indicate a fever, which
+                                                can
+                                                be a sign of infection.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="hrmhm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Heart Rate Monitors:</h5>
+                                            <p class="card-text">These devices can be used to measure the heart rate of
+                                                animals. An increase in heart rate may indicate pain or stress, while a
+                                                decrease may indicate a cardiovascular issue.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="rrmhm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Respiration Rate Monitors:</h5>
+                                            <p class="card-text">These devices can be used to measure the respiration
+                                                rate
+                                                of animals. An increase in respiration rate may indicate respiratory
+                                                distress or pneumonia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="amhm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Activity Monitors:</h5>
+                                            <p class="card-text">These sensors can be used to monitor the activity level
+                                                of
+                                                animals. A decrease in activity may indicate lameness or other mobility
+                                                issues.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="bgmhm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Blood Glucose Monitors:</h5>
+                                            <p class="card-text">These devices can be used to measure the blood glucose
+                                                level of animals. An increase in blood glucose may indicate diabetes,
+                                                while
+                                                a decrease may indicate hypoglycemia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="container">
+                                <h3>Examples</h3>
+                                <div class="text-bg-primary p-3">
+                                    <h4>Electronic ear tags:</h4>These are ear tags with integrated sensors
+                                    that can monitor the activity,
+                                    location, and other vital signs of animals.
+                                </div>
+                                <div class="text-bg-secondary p-3">
+                                    <h4>Implantable sensors:</h4>These are small sensors that can be
+                                    implanted under the skin of animals to
+                                    continuously monitor their vital signs.
+                                </div>
+                                <div class="text-bg-success p-3">
+                                    <h4>Wearable devices:</h4>These are devices that can be worn by
+                                    animals, such as collars or leg bands,
+                                    to monitor their vital signs.
+                                </div>
+                                <div class="text-bg-danger p-3">
+                                    <h4>Remote monitoring systems:</h4>These devices can be used to measure the
+                                    blood glucose level of animals. An increase in blood glucose may
+                                    indicate diabetes, while a decrease may indicate hypoglycemia.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>Reproduction Monitoring</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Reproduction monitoring is an important aspect of livestock management that involves
+                            tracking
+                            the fertility and breeding cycles of animals. Reproduction monitoring is essential for
+                            maintaining the productivity and profitability of livestock herds, as it allows farmers to
+                            optimize their breeding programs, improve genetic diversity, and increase the number of
+                            healthy
+                            offspring.<br><br>There are several methods for reproduction monitoring in
+                            livestock:<br><br>
+                            <div class="row row-cols-1 row-cols-md-3 g-5">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="edrm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Estrus Detection:</h5>
+                                            <p class="card-text"> Estrus detection involves monitoring the reproductive
+                                                behavior of animals, such as mounting and vocalization, to determine
+                                                when
+                                                they are in heat. This information can be used to time breeding more
+                                                accurately and to optimize the conception rate.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="uirm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ultrasound Imaging:</h5>
+                                            <p class="card-text">Ultrasound imaging can be used to visualize the
+                                                reproductive organs of animals and to detect pregnancy. This information
+                                                can
+                                                be used to determine the stage of pregnancy, to monitor fetal growth,
+                                                and to
+                                                identify potential reproductive issues.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="hmrm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hormone Monitoring:</h5>
+                                            <p class="card-text">Hormone monitoring involves measuring the levels of
+                                                reproductive hormones, such as progesterone and luteinizing hormone, in
+                                                the
+                                                blood or urine of animals. This information can be used to detect the
+                                                onset
+                                                of estrus, to time breeding, and to monitor the success of insemination
+                                                or
+                                                embryo transfer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="gtrm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Genetic Testing:</h5>
+                                            <p class="card-text">Genetic testing can be used to identify animals with
+                                                desirable traits, such as high milk production or resistance to disease,
+                                                and
+                                                to optimize breeding programs accordingly.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="container">
+                                <h3>Examples</h3>
+                                <div class="text-bg-primary p-3">
+                                    <h4>Heat detection systems:</h4>These systems use sensors or cameras to monitor the
+                                    behavior of animals and to detect when they are in heat. The data collected can
+                                    be analyzed to predict the optimal time for breeding and to improve the
+                                    conception rate.
+                                </div>
+                                <div class="text-bg-secondary p-3">
+                                    <h4>Electronic identification systems:</h4>These systems use electronic ear tags or
+                                    other
+                                    devices to track the reproductive history of animals and to monitor their
+                                    fertility and breeding cycles.
+                                </div>
+                                <div class="text-bg-success p-3">
+                                    <h4>Ultrasound systems:</h4>These systems use ultrasound imaging to visualize
+                                    the reproductive organs of animals and to detect pregnancy. The data collected
+                                    can be analyzed to optimize breeding programs and to identify potential
+                                    reproductive issues.
+                                </div>
+                                <div class="text-bg-danger p-3">
+                                    <h4>Hormone monitoring systems:</h4>These systems use hormone tests to monitor the
+                                    reproductive status of animals and to time breeding more accurately. The data
+                                    collected can be analyzed to optimize breeding programs and to monitor the
+                                    success of insemination or embryo transfer.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><br>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>Behavior Monitoring</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Behavior monitoring is an essential aspect of livestock management that involves tracking
+                            the
+                            behavior and activity patterns of animals. Behavior monitoring provides valuable insights
+                            into
+                            the health, welfare, and productivity of animals, and can be used to detect early signs of
+                            illness or injury, optimize feed and water management, and improve overall herd
+                            management.There
+                            are several methods for behavior monitoring in livestock:
+                            <br><br>
+                            <div class="row row-cols-1 row-cols-md-3 g-5">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="ambm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Activity Monitoring:</h5>
+                                            <p class="card-text">Activity monitoring involves tracking the movement and
+                                                activity levels of animals using sensors or GPS devices. This
+                                                information
+                                                can be used to identify changes in behavior that may indicate health or
+                                                welfare issues, such as reduced activity levels, changes in feeding
+                                                behavior, or abnormal sleeping patterns.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="fbmbm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Feeding Behavior Monitoring:</h5>
+                                            <p class="card-text">Feeding behavior monitoring involves tracking the
+                                                feeding
+                                                behavior of animals using sensors or cameras. This information can be
+                                                used
+                                                to optimize feed management, identify potential health issues related to
+                                                feeding behavior, and to monitor the growth and development of young
+                                                animals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="wcmbm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Water Consumption Monitoring:</h5>
+                                            <p class="card-text">Water consumption monitoring involves tracking the
+                                                water
+                                                intake of animals using sensors or meters. This information can be used
+                                                to
+                                                optimize water management, identify potential health issues related to
+                                                water
+                                                consumption, and to monitor the hydration status of animals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="sbmbm.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Social Behavior Monitoring:</h5>
+                                            <p class="card-text">Social behavior monitoring involves tracking the social
+                                                interactions of animals using cameras or sensors. This information can
+                                                be
+                                                used to identify social hierarchy within herds, to monitor bullying and
+                                                aggression, and to optimize herd management practices.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="container">
+                                <h3>Examples</h3>
+                                <div class="text-bg-primary p-3">
+                                    <h4>GPS tracking systems:</h4>These systems use GPS devices attached to animals to
+                                    track
+                                    their movement
+                                    and activity levels. The data collected can be analyzed to identify changes in
+                                    behavior
+                                    that
+                                    may
+                                    indicate illness or injury, or to optimize herd management practices.
+                                </div>
+                                <div class="text-bg-secondary p-3">
+                                    <h4>Feeding behavior monitoring systems:</h4>These systems use sensors or cameras to
+                                    monitor
+                                    the feeding
+                                    behavior of animals, such as the frequency and duration of feeding, the amount of
+                                    feed
+                                    consumed, and the
+                                    feeding patterns of individual animals. The data collected can be analyzed to
+                                    optimize
+                                    feed
+                                    management
+                                    and to detect potential health issues related to feeding behavior.
+                                </div>
+                                <div class="text-bg-success p-3">
+                                    <h4>Water consumption monitoring systems:</h4>These systems use sensors or meters to
+                                    monitor
+                                    the water intake of
+                                    animals. The data collected can be analyzed to optimize water management, to
+                                    identify
+                                    potential health
+                                    issues related to water consumption, and to monitor the hydration status of animals.
+                                </div>
+                                <div class="text-bg-danger p-3">
+                                    <h4>Social behavior monitoring systems:</h4>These systems use cameras or sensors to
+                                    monitor
+                                    the social
+                                    interactions of animals within herds. The data collected can be analyzed to optimize
+                                    herd
+                                    management
+                                    practices, to identify social hierarchy within herds, and to monitor bullying and
+                                    aggression.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <strong>Location Tracking</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Location tracking is an important aspect of smart agriculture technology that involves
+                            tracking
+                            the location of livestock and equipment on a farm. Location tracking provides valuable
+                            insights
+                            into the movement and activity patterns of animals and equipment, and can be used to
+                            optimize
+                            herd management, prevent theft or loss, and improve overall farm productivity.<br>
+                            <br>.There are several methods for location tracking in agriculture: <br><br>
+                            <div class="row row-cols-1 row-cols-md-3 g-5">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="gpslt.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">GPS tracking:</h5>
+                                            <p class="card-text">GPS tracking involves using GPS devices to track the
+                                                location of animals and equipment on a farm. GPS tracking devices can be
+                                                attached to collars or ear tags for livestock, and to equipment such as
+                                                tractors or harvesters. The data collected can be used to optimize the
+                                                movement of animals and equipment, to prevent theft or loss, and to
+                                                monitor
+                                                the progress of farm operations.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="rfidlt.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">RFID tracking:</h5>
+                                            <p class="card-text">RFID tracking involves using RFID tags to track the
+                                                location of animals and equipment on a farm. RFID tags can be attached
+                                                to
+                                                ear tags or collars for livestock, and to equipment such as trailers or
+                                                storage containers. The data collected can be used to optimize the
+                                                movement
+                                                of animals and equipment, to prevent theft or loss, and to monitor the
+                                                progress of farm operations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="btlt.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bluetooth tracking:</h5>
+                                            <p class="card-text">Bluetooth tracking involves using Bluetooth devices to
+                                                track the location of animals and equipment on a farm. Bluetooth devices
+                                                can
+                                                be attached to collars or ear tags for livestock, and to equipment such
+                                                as
+                                                tractors or harvesters. The data collected can be used to optimize the
+                                                movement of animals and equipment, to prevent theft or loss, and to
+                                                monitor
+                                                the progress of farm operations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="dtlt.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Drone tracking:</h5>
+                                            <p class="card-text">Drone tracking involves using drones equipped with
+                                                cameras
+                                                or sensors to track the location of animals and equipment on a farm. The
+                                                data collected can be used to optimize the movement of animals and
+                                                equipment, to prevent theft or loss, and to monitor the progress of farm
+                                                operations.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="container">
+                            <h3>Examples</h3>
+                            <div class="text-bg-primary p-3">
+                                <h4>GPS tracking systems:</h4>These systems use GPS devices attached to animals or
+                                equipment
+                                to
+                                track their
+                                movement and location. The data collected can be analyzed to optimize herd management,
+                                prevent
+                                theft
+                                or loss, and improve overall farm productivity.
+                            </div>
+                            <div class="text-bg-secondary p-3">
+                                <h4>RFID tracking systems:</h4>These systems use RFID tags attached to animals or
+                                equipment
+                                to
+                                track their
+                                location. The data collected can be analyzed to optimize herd management, prevent theft
+                                or
+                                loss,
+                                and
+                                improve overall farm productivity.
+                            </div>
+                            <div class="text-bg-success p-3">
+                                <h4>Bluetooth tracking systems:</h4>These systems use Bluetooth devices attached to
+                                animals
+                                or
+                                equipment to
+                                track their location. The data collected can be analyzed to optimize herd management,
+                                prevent
+                                theft
+                                or loss, and improve overall farm productivity.
+                            </div>
+                            <div class="text-bg-danger p-3">
+                                <h4>Drone tracking systems:</h4>These systems use drones equipped with cameras or
+                                sensors to
+                                track the
+                                location of animals or equipment on a farm. The data collected can be analyzed to
+                                optimize
+                                herd
+                                management, prevent theft or loss, and improve overall farm productivity.
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <strong>Environmental Monitoring</strong>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Environmental monitoring is an important aspect of smart agriculture technology that
+                            involves
+                            monitoring the physical environment of a farm, including weather, soil conditions, water
+                            quality, and air quality. Environmental monitoring provides valuable insights into the
+                            health
+                            and productivity of crops and livestock, and can be used to optimize farm management
+                            practices
+                            and improve overall farm productivity.<br><br>There are several methods for environmental
+                            monitoring in agriculture:
+                            <br><br>
+                            <div class="row row-cols-1 row-cols-md-3 g-5">
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="wmem.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Weather Monitoring:</h5>
+                                            <p class="card-text"> Weather monitoring involves tracking temperature,
+                                                humidity, precipitation, wind speed, and other weather conditions on a
+                                                farm.
+                                                This information can be used to optimize planting, harvesting, and
+                                                irrigation schedules, and to predict and prevent weather-related damage
+                                                to
+                                                crops and livestock.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="smem.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Soil Monitoring:</h5>
+                                            <p class="card-text">Soil monitoring involves measuring soil moisture,
+                                                nutrient
+                                                levels, and other soil conditions on a farm. This information can be
+                                                used to
+                                                optimize fertilizer and irrigation practices, and to prevent soil
+                                                erosion
+                                                and nutrient depletion.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="wqmem.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Water Quality Monitoring:</h5>
+                                            <p class="card-text">Water quality monitoring involves measuring the
+                                                chemical
+                                                and biological properties of water sources on a farm, such as ponds,
+                                                streams, and wells. This information can be used to prevent water
+                                                pollution,
+                                                optimize irrigation practices, and ensure the health of livestock that
+                                                rely
+                                                on these water sources.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="aqmem.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Air Quality Monitoring:</h5>
+                                            <p class="card-text">Air quality monitoring involves measuring the
+                                                concentration
+                                                of pollutants in the air on a farm, such as dust, ammonia, and other
+                                                gases.
+                                                This information can be used to prevent respiratory problems in
+                                                livestock,
+                                                optimize ventilation systems, and ensure the safety of farm workers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <h3>Examples</h3>
+                            <div class="text-bg-primary p-3">
+                                <h4>Weather stations:</h4>These systems use sensors to measure temperature, humidity,
+                                precipitation, and other
+                                weather conditions on a farm. The data collected can be used to optimize planting,
+                                harvesting,
+                                and
+                                irrigation schedules, and to predict and prevent weather-related damage to crops and
+                                livestock.
+                            </div>
+                            <div class="text-bg-secondary p-3">
+                                <h4>Soil sensors:</h4>These systems use sensors to measure soil moisture, nutrient
+                                levels,
+                                and
+                                other soil conditions
+                                on a farm. The data collected can be used to optimize fertilizer and irrigation
+                                practices,
+                                and
+                                to prevent
+                                soil erosion and nutrient depletion.
+                            </div>
+                            <div class="text-bg-success p-3">
+                                <h4>Water quality sensors: </h4>These systems use sensors to measure the chemical and
+                                biological
+                                properties of water
+                                sources on a farm. The data collected can be used to prevent water pollution, optimize
+                                irrigation practices,
+                                and ensure the health of livestock that rely on these water sources.
+                            </div>
+                            <div class="text-bg-danger p-3">
+                                <h4>Air quality sensors:</h4>These systems use sensors to measure the concentration of
+                                pollutants in the air on a
+                                farm. The data collected can be used to prevent respiratory problems in livestock,
+                                optimize
+                                ventilation
+                                systems, and ensure the safety of farm workers.
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <hr>
+                <hr>
+                <h2>Suggestions:</h2>
+                <p> Not Up To The Mark...? Here are some websites that provide comprehensive information on Livestock
+                    Monitoring: </p>
+                <div class="card" style="width: 18rem;">
+                    <a class="btn btn-primary" target="_blank" href="https://www.drovers.com/" role="button">Drovers</a>
+                    <a class="btn btn-secondary" target="_blank" href="https://www.allaboutfeed.net/" role="button">All
+                        About Feed</a>
+                    <a class="btn btn-success" target="_blank" href=" https://www.agweb.com/" role="button">AgWeb</a>
+                    <a class="btn btn-info" target="_blank" href="https://extension.org/" role="button">eXtension</a>
+                    <a class="btn btn-dark" target="_blank" href="https://thepigsite.com/" role="button">The Pig
+                        Site</a>
+                </div><br>
+            </div>
+            <hr>
+            <a href="livestock.html" class="btn btn-secondary">Go to Top..</a>
+        </div><br><br>
+        <hr>
+    </div>
+
+    <div class="container my-4">
+        <footer>
+            <div class="social-links">
+                <ul class="list-inline social-icons">
+                    <li><a href="#"><img src="facebook.gif" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/invites/contact/?i=htj333d872zd&utm_content=3d7lkwu"
+                        target="_blank"><img src="instagram.gif" alt="Instagram"></a></li>
+                    <li><a href="https://whatsapp.com/dl/" target="_blank"><img src="whatsapp.gif" alt="Whatsapp"></a></li>
+                    <li><a href="#"><img src="twitter.gif" alt="Twitter"></a></li><br><br>
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
